@@ -14,6 +14,7 @@ function agregarAmigo(){
    document.getElementById("amigo").value = "";
 
    actualizarListaAmigos();
+   mensajeResultado("");
   
 }
 
@@ -27,8 +28,27 @@ function actualizarListaAmigos(){
       elemento.textContent = nombresAmigos[i];
      // console.log("Eres" + elemento[i]);
       listaDeAmigos.appendChild(elemento);
-      
    }
+
+}
+
+
+function sortearAmigo(){
+
+   if (nombresAmigos.length > 0){
+      
+      let amigoAleatorio = Math.floor(Math.random()*nombresAmigos.length);
+      mensajeResultado("Tu amigo Secreto es: " + nombresAmigos[amigoAleatorio]);
+
+   } else{
+      mensajeResultado("No tienes ningun amigo registrado en la lista");
+   }
+
+}
+
+function mensajeResultado(mensaje){
+   let resultadoFinal = document.getElementById("resultado");
+   resultadoFinal.innerHTML = mensaje;
 
 }
 
