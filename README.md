@@ -20,7 +20,7 @@ Este es un pequeño proyecto web que permite registrar nombres de amigos y reali
 2.  Acceder a la carpeta del proyecto:
 
     ```bash
-    cd amigo-secreto
+    cd desafio-amigoSecreto
     ```
 
     No se requiere instalación de dependencias adicionales, ya que es un proyecto basado en HTML, CSS y JavaScript puro.
